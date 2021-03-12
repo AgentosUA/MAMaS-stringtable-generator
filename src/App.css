@@ -1,10 +1,11 @@
 .App {
-  margin: 50px auto auto auto;
-  padding: 8px;
+  margin: 50px auto;
+  padding: 20px;
   width: 100%;
   height: auto;
   max-width: 1250px;
-  background: #f5f5f5;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
 }
 
 header {
@@ -25,6 +26,11 @@ footer {
   text-align: center;
 }
 
+main {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .main-settings {
   display: block;
   flex-wrap: wrap;
@@ -38,7 +44,9 @@ footer {
 }
 
 .sides {
+  margin-top: 25px;
   display: flex;
+  justify-content: center;
 }
 
 input, textarea {
@@ -56,4 +64,37 @@ input, textarea {
 textarea {
   max-width: 325px;
   min-height: 80px;
+}
+
+.bluefor, .redfor, .independent {
+  margin: 0 25px;
+}
+
+.blue {
+  color: #1859F5;
+}
+
+.red {
+  color: #F5360C;
+}
+
+.submit {
+  margin: 15px auto;
+  padding: 6px;
+  display: block;
+  text-align: center;
+  width: 220px;
+  height: 35px;
+  border: none;
+  background: #FFE500;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .3s;
+  text-transform: uppercase;
+}
+
+.submit:hover {
+  background:#000;
+  color: #fff;
+  transition: .3s;
 }
