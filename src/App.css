@@ -3,7 +3,7 @@
   padding: 20px;
   width: 100%;
   height: auto;
-  max-width: 1250px;
+  max-width: 1350px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
 }
@@ -41,25 +41,43 @@ main {
 .main-settings div {
   margin: 0 auto;
   width: 100%;
-  max-width: 320px;
+  max-width: 500px;
 }
 
 .sides {
   margin-top: 25px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-input, textarea {
+.sides-select {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sides-select div {
+  margin: 0 25px;
+}
+
+input[type='text'],
+textarea {
   margin: 8px auto;
   padding: 5px 10px;
   display: block;
-  width: 325px;
+  width: 100%;
   height: auto;
+  min-width: 500px;
   min-height: 25px;
   padding: 8px auto;
   box-shadow: 2px 3px 2px -1px rgba(0, 0, 0, 0.2);
   border: none;
+}
+
+.main-settings textarea,
+.main-settings input {
+  min-width: 520px;
 }
 
 textarea {
@@ -67,20 +85,22 @@ textarea {
   min-height: 80px;
 }
 
-.bluefor, .redfor, .independent {
+.bluefor,
+.redfor,
+.independent {
   margin: 0 25px;
 }
 
 .blue {
-  color: #1859F5;
+  color: #1859f5;
 }
 
 .red {
-  color: #F5360C;
+  color: #f5360c;
 }
 
 .green {
-  color: #50C878;
+  color: #50c878;
 }
 
 .submit {
@@ -91,15 +111,15 @@ textarea {
   width: 220px;
   height: 35px;
   border: none;
-  background: #FFE500;
+  background: #ffe500;
   cursor: pointer;
   font-weight: 600;
-  transition: .3s;
+  transition: 0.3s;
   text-transform: uppercase;
 }
 
 .submit:hover {
-  background:#000;
+  background: #000;
   color: #fff;
-  transition: .3s;
+  transition: 0.3s;
 }
