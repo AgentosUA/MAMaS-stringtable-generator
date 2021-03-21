@@ -20,6 +20,7 @@ h1 {
 
 header span {
   font-weight: 600;
+  font-size: 18px;
 }
 
 footer {
@@ -76,6 +77,10 @@ textarea {
 
 .red {
   color: #F5360C;
+}
+
+.green {
+  color: #50C878;
 }
 
 .submit {
